@@ -1,0 +1,7 @@
+---
+- name: setup repository for to install nodejs
+  shell: curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo -E bash -
+
+- name: install node
+  yum: name=nodejs state=present
+  become: yes

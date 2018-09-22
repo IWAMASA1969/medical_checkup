@@ -1,0 +1,8 @@
+---
+- hosts: medical_checkup
+  user: vagrant
+  roles:
+    - update_package
+    - rbenv
+    - node
+    - yarn

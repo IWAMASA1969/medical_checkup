@@ -1,0 +1,7 @@
+---
+- name: setup repository for to install yarn
+  shell: curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+
+- name: install yarn
+  yum: name=yarn state=present
+  become: yes
