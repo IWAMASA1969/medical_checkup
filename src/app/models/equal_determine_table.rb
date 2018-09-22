@@ -1,0 +1,2 @@
+class EqualDetermineTable < ApplicationRecord
+end

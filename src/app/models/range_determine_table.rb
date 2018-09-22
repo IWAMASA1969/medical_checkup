@@ -1,0 +1,2 @@
+class RangeDetermineTable < ApplicationRecord
+end
