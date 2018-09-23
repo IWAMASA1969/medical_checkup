@@ -26,22 +26,26 @@ ActiveRecord::Schema.define(version: 2018_09_22_093245) do
 
   create_table "exam_items", force: :cascade do |t|
     t.string "item_name"
-    t.string "determine_typr"
+    t.string "determine_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "range_determine_tables", force: :cascade do |t|
+    t.integer "range_determine_id"
     t.float "from_value"
     t.float "to_value"
     t.string "determine_result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["range_determine_id"], name: "index_range_determine_tables_on_range_determine_id"
   end
 
   create_table "range_determines", force: :cascade do |t|
+    t.integer "exam_item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["exam_item_id"], name: "index_range_determines_on_exam_item_id"
   end
 
 end

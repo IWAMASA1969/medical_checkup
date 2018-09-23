@@ -2,8 +2,8 @@
 
 one:
   item_name: MyString
-  determine_typr: MyString
+  determine_type: MyString
 
 two:
   item_name: MyString
-  determine_typr: MyString
+  determine_type: MyString
