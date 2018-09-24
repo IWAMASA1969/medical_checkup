@@ -1,0 +1,2 @@
+module Exam::ItemsHelper
+end
