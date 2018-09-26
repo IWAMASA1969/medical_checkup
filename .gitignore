@@ -37,3 +37,4 @@ yarn-debug.log*
 *.retry
 *.swp
 .DS_Store
+/.vagrant
