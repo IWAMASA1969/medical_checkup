@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'medical_checkups#index'
   namespace :exam do
     resources :items, only: [ :create ]
+    resources :item_views, only: [ :new ]
   end
 end
