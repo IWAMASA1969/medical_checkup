@@ -1,11 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import ReactDom from "react-dom";
+import PropTypes from "prop-types";
+import Button from "@material-ui/core/Button";
 class MedicalCheckup extends React.Component {
   render () {
     return (
-      <React.Fragment>
-        Greeting: {this.props.greeting}
-      </React.Fragment>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
     );
   }
 }
